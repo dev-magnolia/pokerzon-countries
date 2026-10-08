@@ -1,11 +1,11 @@
-/** Pénznem (ISO 4217). */
+/** Currency (ISO 4217). */
 export interface Currency {
   code: string | null;
   name: string | null;
   symbol: string | null;
 }
 
-/** Nyelv (ISO 639). */
+/** Language (ISO 639). */
 export interface Language {
   iso639_1?: string;
   iso639_2: string;
@@ -20,18 +20,18 @@ export interface RegionalBloc {
   otherNames: string[];
 }
 
-/** Egy ország a country.json-ban (ISO 3166-1). */
+/** A country in country.json (ISO 3166-1). */
 export interface Country {
-  /** Hivatalos angol név, néha hosszú: "Korea (Republic of)". */
+  /** Official English name, sometimes long: "Korea (Republic of)". */
   name: string;
-  /** Rövid megjelenítési név: "South Korea". */
+  /** Short display name: "South Korea". */
   displayName: string;
-  /** ISO 3166-1 alpha-2: "KR" — a kulcs. */
+  /** ISO 3166-1 alpha-2: "KR" — the key. */
   alpha2Code: string;
   /** ISO 3166-1 alpha-3: "KOR". */
   alpha3Code: string;
   numericCode?: string;
-  /** Olimpiai kód. */
+  /** Olympic (IOC) code. */
   cioc?: string;
   nativeName: string;
   altSpellings?: string[];
@@ -46,20 +46,20 @@ export interface Country {
   area?: number | null;
   population: number;
   gini?: number;
-  /** UTC-eltolások ("UTC+09:00") — nem IANA. */
+  /** UTC offsets ("UTC+09:00"), not IANA time zones. */
   timezones: string[];
   currencies: Currency[];
   languages: Language[];
   callingCodes: string[];
   topLevelDomain: string[];
-  /** Szomszédok alpha-3 kódja. */
+  /** Neighbours, alpha-3 codes. */
   borders?: string[];
   regionalBlocs?: RegionalBloc[];
-  /** Zászló emojiként: "🇰🇷". */
+  /** Flag emoji: "🇰🇷". */
   flag: string;
 }
 
-/** Amerikai állam ország-szerű rekordként (usa.json): alpha3Code "USA-NV", alpha2Code "NV". */
+/** A US state as a country-like record (usa.json): alpha3Code "USA-NV", alpha2Code "NV". */
 export interface UsaState {
   name: string;
   displayName: string;
@@ -73,7 +73,7 @@ export interface UsaState {
   currencies: Currency[];
   languages: Language[];
   timezones: string[];
-  /** Mindig 🇺🇸. */
+  /** Always 🇺🇸. */
   flag: string;
 }
 

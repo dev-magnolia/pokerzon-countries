@@ -1,0 +1,15 @@
+@pokerzon/countries
+Copyright (c) 2026 Magnolia ITS (POKERZON)
+
+The code in this repository (src/, scripts/, test/) is licensed under the MIT License (see LICENSE).
+
+The country data in data/country.json is derived from the REST Countries project
+(restcountries.eu, API v2), which is licensed under the Mozilla Public License 2.0:
+https://www.mozilla.org/en-US/MPL/2.0/
+Source: https://gitlab.com/restcountries/restcountries
+
+Changes made to the data:
+- added the "displayName" field (short display names, e.g. "South Korea" for "Korea (Republic of)");
+- replaced the "flag" image URL (no longer available) with the flag emoji derived from the ISO alpha-2 code.
+
+data/usa.json (US states as country-like records) was compiled by Magnolia ITS and is provided under the MIT License.

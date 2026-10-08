@@ -1,7 +1,6 @@
 /**
- * @pokerzon/countries — ország-törzsadat és segédfüggvények minden POKERZON projekthez.
- * Adat: data/country.json (250 ország) és data/usa.json (51 amerikai állam).
- * Döntések: zászló emojiként (D-077), ország-kód ISO alpha-2 (T-04) — pokerzon-docs wiki.
+ * @pokerzon/countries — country reference data and helpers.
+ * Data: data/country.json (250 countries) and data/usa.json (51 US states).
  */
 import { countries, usaStates } from "./generated/data.js";
 import type { Country, CountryLike, UsaState } from "./types.js";
@@ -11,7 +10,7 @@ export { countries, usaStates };
 
 const ALL: CountryLike[] = [...countries, ...usaStates];
 
-/** Szövegből slug: kisbetű, ékezet nélkül, kötőjellel ("Viet Nam" → "viet-nam"). */
+/** Text → slug: lowercase, no accents, hyphens ("Viet Nam" → "viet-nam"). */
 export function stringToSlug(str: string): string {
   if (!str) return "";
   return str
@@ -26,14 +25,14 @@ export function stringToSlug(str: string): string {
     .replace(/^-|-$/g, "");
 }
 
-/** Az országok és (alapból) az amerikai államok. */
+/** All countries and, by default, the US states. */
 export function getCountries(options: { includeUsaStates?: boolean } = {}): CountryLike[] {
   return options.includeUsaStates === false ? countries : ALL;
 }
 
 /**
- * Ország keresése alpha-2, alpha-3, név, displayName, név-slug vagy bármely altSpellings szerint,
- * kis- és nagybetűtől függetlenül. "KR", "kor", "South Korea", "korea-republic-of" → Korea (Republic of).
+ * Finds a country by alpha-2, alpha-3, name, displayName, name slug or any altSpellings, case-insensitive.
+ * "KR", "kor", "South Korea", "korea-republic-of" → Korea (Republic of).
  */
 export function getCountry(code: string | null | undefined): CountryLike | null {
   if (!code) return null;
@@ -53,7 +52,7 @@ export function getCountry(code: string | null | undefined): CountryLike | null 
   );
 }
 
-/** Gyorsítótárazott getCountry — nagy táblákhoz (pl. játékosok országa). */
+/** Memoized getCountry, for large tables. */
 export function getCountryMemo(): (code: string | null | undefined) => CountryLike | null {
   const memo = new Map<string, CountryLike | null>();
   return (code) => {
@@ -63,40 +62,40 @@ export function getCountryMemo(): (code: string | null | undefined) => CountryLi
   };
 }
 
-/** Rövid megjelenítési név: "KR" → "South Korea". */
+/** Short display name: "KR" → "South Korea". */
 export function getCountryName(code: string | null | undefined): string | null {
   return getCountry(code)?.displayName ?? null;
 }
 
 const nameCache = new Map<string, string | null>();
-/** Gyorsítótárazott getCountryName. */
+/** Cached getCountryName. */
 export function getCountryNameCached(code: string | null | undefined): string | null {
   if (!code) return null;
   if (!nameCache.has(code)) nameCache.set(code, getCountryName(code));
   return nameCache.get(code) ?? null;
 }
 
-/** Két betűs kód → zászló emoji (két regional indicator karakter): "KR" → "🇰🇷". */
+/** Two-letter code → flag emoji (two regional indicator symbols): "KR" → "🇰🇷". */
 export function alpha2ToFlagEmoji(alpha2: string): string {
   if (!/^[A-Za-z]{2}$/.test(alpha2)) return "";
   return String.fromCodePoint(...alpha2.toUpperCase().split("").map((ch) => 0x1f1a5 + ch.charCodeAt(0)));
 }
 
 /**
- * Zászló emoji (D-077) bármilyen kódból vagy névből: "KR", "KOR", "South Korea" → "🇰🇷"; USA-állam → "🇺🇸".
- * Ismeretlen kódra üres string. Windowson a böngészők alapból a két betűt mutatják (opcionális webfont).
+ * Flag emoji from any code or name: "KR", "KOR", "South Korea" → "🇰🇷"; a US state → "🇺🇸".
+ * Empty string if unknown. Browsers on Windows show the two letters instead (use a flag-emoji web font if needed).
  */
 export function getFlagEmoji(code: string | null | undefined): string {
   return getCountry(code)?.flag ?? "";
 }
 
-/** ISO 3166-1 alpha-3 → alpha-2 ("KOR" → "KR"); a legacy PEL-kódok leképezéséhez. */
+/** ISO 3166-1 alpha-3 → alpha-2 ("KOR" → "KR"). */
 export function alpha3ToAlpha2(alpha3: string): string | null {
   const a = alpha3?.toLowerCase();
   return countries.find((x) => x.alpha3Code.toLowerCase() === a)?.alpha2Code ?? null;
 }
 
-/** Az ország fő pénzneme (ISO 4217): "KR" → "KRW". */
+/** Main currency (ISO 4217): "KR" → "KRW". */
 export function getMainCurrency(code: string | null | undefined): string | null {
   return getCountry(code)?.currencies?.[0]?.code ?? null;
 }

@@ -1,22 +1,46 @@
 {
   "name": "@pokerzon/countries",
-  "version": "0.1.0",
-  "description": "Country reference data (ISO 3166, display names, flag emoji, currencies, translations) and helpers for all POKERZON projects.",
-  "license": "UNLICENSED",
-  "private": true,
+  "version": "0.1.1",
+  "description": "Country reference data (ISO 3166-1, display names, flag emoji, currencies, languages, translations) with typed, dependency-free helpers.",
+  "keywords": [
+    "countries",
+    "iso-3166",
+    "country-codes",
+    "flag-emoji",
+    "currencies",
+    "typescript"
+  ],
+  "license": "(MIT AND MPL-2.0)",
+  "homepage": "https://github.com/dev-magnolia/pokerzon-countries#readme",
+  "bugs": {
+    "url": "https://github.com/dev-magnolia/pokerzon-countries/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/dev-magnolia/pokerzon-countries.git"
+  },
   "type": "module",
   "sideEffects": false,
-  "repository": { "type": "git", "url": "git+https://github.com/dev-magnolia/pokerzon-countries.git" },
   "main": "./dist/index.js",
   "types": "./dist/index.d.ts",
   "exports": {
-    ".": { "types": "./dist/index.d.ts", "import": "./dist/index.js" },
+    ".": {
+      "types": "./dist/index.d.ts",
+      "import": "./dist/index.js"
+    },
     "./country.json": "./data/country.json",
     "./usa.json": "./data/usa.json",
     "./package.json": "./package.json"
   },
-  "files": ["dist", "data"],
-  "engines": { "node": ">=18" },
+  "files": [
+    "dist",
+    "data",
+    "LICENSE",
+    "NOTICE"
+  ],
+  "engines": {
+    "node": ">=18"
+  },
   "scripts": {
     "gen": "node scripts/gen-data.mjs",
     "build": "npm run gen && tsc -p tsconfig.build.json",

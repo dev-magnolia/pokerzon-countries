@@ -1,6 +1,6 @@
 // data/*.json → src/generated/data.ts
-// A JSON-t egy JSON.parse-olt stringként ágyazza be: minden bundlerben és Node-ban működik (nincs JSON-import,
-// nincs import attribute), és a JSON.parse gyorsabb, mint egy nagy objektum-literál feldolgozása.
+// Embeds the JSON as a JSON.parse'd string: works in every bundler and in Node (no JSON import, no import
+// attributes), and JSON.parse is faster than parsing a large object literal.
 import { readFileSync, writeFileSync, mkdirSync } from "node:fs";
 
 const read = (f) => JSON.stringify(JSON.parse(readFileSync(new URL(`../data/${f}`, import.meta.url), "utf8")));
