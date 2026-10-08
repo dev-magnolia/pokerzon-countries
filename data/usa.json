@@ -1,0 +1,1430 @@
+[
+  {
+    "name": "Alabama",
+    "displayName": "Alabama",
+    "alpha2Code": "AL",
+    "alpha3Code": "USA-AL",
+    "capital": "Montgomery",
+    "region": "USA",
+    "subregion": "USA",
+    "population": 4903185,
+    "latlng": [32.361538, -86.279118],
+    "currencies": [
+      {
+        "code": "USD",
+        "name": "United States dollar",
+        "symbol": "$"
+      }
+    ],
+    "languages": [
+      {
+        "iso639_1": "en",
+        "iso639_2": "eng",
+        "name": "English",
+        "nativeName": "English"
+      }
+    ],
+    "flag": "🇺🇸",
+    "timezones": ["UTC-06:00", "UTC-05:00"]
+  },
+  {
+    "name": "Alaska",
+    "displayName": "Alaska",
+    "alpha2Code": "AK",
+    "alpha3Code": "USA-AK",
+    "capital": "Juneau",
+    "region": "USA",
+    "subregion": "USA",
+    "population": 731545,
+    "latlng": [58.301935, -134.41974],
+    "currencies": [
+      {
+        "code": "USD",
+        "name": "United States dollar",
+        "symbol": "$"
+      }
+    ],
+    "languages": [
+      {
+        "iso639_1": "en",
+        "iso639_2": "eng",
+        "name": "English",
+        "nativeName": "English"
+      }
+    ],
+    "flag": "🇺🇸",
+    "timezones": ["UTC-09:00", "UTC-08:00"]
+  },
+  {
+    "name": "Arizona",
+    "displayName": "Arizona",
+    "alpha2Code": "AZ",
+    "alpha3Code": "USA-AZ",
+    "capital": "Phoenix",
+    "region": "USA",
+    "subregion": "USA",
+    "population": 7278717,
+    "latlng": [33.448457, -112.073844],
+    "currencies": [
+      {
+        "code": "USD",
+        "name": "United States dollar",
+        "symbol": "$"
+      }
+    ],
+    "languages": [
+      {
+        "iso639_1": "en",
+        "iso639_2": "eng",
+        "name": "English",
+        "nativeName": "English"
+      }
+    ],
+    "flag": "🇺🇸",
+    "timezones": ["UTC-07:00"]
+  },
+  {
+    "name": "Arkansas",
+    "displayName": "Arkansas",
+    "alpha2Code": "AR",
+    "alpha3Code": "USA-AR",
+    "capital": "Little Rock",
+    "region": "USA",
+    "subregion": "USA",
+    "population": 3017804,
+    "latlng": [34.736009, -92.331122],
+    "currencies": [
+      {
+        "code": "USD",
+        "name": "United States dollar",
+        "symbol": "$"
+      }
+    ],
+    "languages": [
+      {
+        "iso639_1": "en",
+        "iso639_2": "eng",
+        "name": "English",
+        "nativeName": "English"
+      }
+    ],
+    "flag": "🇺🇸",
+    "timezones": ["UTC-06:00"]
+  },
+  {
+    "name": "California",
+    "displayName": "California",
+    "alpha2Code": "CA",
+    "alpha3Code": "USA-CA",
+    "capital": "Sacramento",
+    "region": "USA",
+    "subregion": "USA",
+    "population": 39512223,
+    "latlng": [38.555605, -121.468926],
+    "currencies": [
+      {
+        "code": "USD",
+        "name": "United States dollar",
+        "symbol": "$"
+      }
+    ],
+    "languages": [
+      {
+        "iso639_1": "en",
+        "iso639_2": "eng",
+        "name": "English",
+        "nativeName": "English"
+      }
+    ],
+    "flag": "🇺🇸",
+    "timezones": ["UTC-08:00", "UTC-07:00"]
+  },
+  {
+    "name": "Colorado",
+    "displayName": "Colorado",
+    "alpha2Code": "CO",
+    "alpha3Code": "USA-CO",
+    "capital": "Denver",
+    "region": "USA",
+    "subregion": "USA",
+    "population": 5758736,
+    "latlng": [39.7391667, -104.984167],
+    "currencies": [
+      {
+        "code": "USD",
+        "name": "United States dollar",
+        "symbol": "$"
+      }
+    ],
+    "languages": [
+      {
+        "iso639_1": "en",
+        "iso639_2": "eng",
+        "name": "English",
+        "nativeName": "English"
+      }
+    ],
+    "flag": "🇺🇸",
+    "timezones": ["UTC-07:00", "UTC-06:00"]
+  },
+  {
+    "name": "Connecticut",
+    "displayName": "Connecticut",
+    "alpha2Code": "CT",
+    "alpha3Code": "USA-CT",
+    "capital": "Hartford",
+    "region": "USA",
+    "subregion": "USA",
+    "population": 3565287,
+    "latlng": [41.767, -72.677],
+    "currencies": [
+      {
+        "code": "USD",
+        "name": "United States dollar",
+        "symbol": "$"
+      }
+    ],
+    "languages": [
+      {
+        "iso639_1": "en",
+        "iso639_2": "eng",
+        "name": "English",
+        "nativeName": "English"
+      }
+    ],
+    "flag": "🇺🇸",
+    "timezones": ["UTC-05:00"]
+  },
+  {
+    "name": "Delaware",
+    "displayName": "Delaware",
+    "alpha2Code": "DE",
+    "alpha3Code": "USA-DE",
+    "capital": "Dover",
+    "region": "USA",
+    "subregion": "USA",
+    "population": 973764,
+    "latlng": [39.161921, -75.526755],
+    "currencies": [
+      {
+        "code": "USD",
+        "name": "United States dollar",
+        "symbol": "$"
+      }
+    ],
+    "languages": [
+      {
+        "iso639_1": "en",
+        "iso639_2": "eng",
+        "name": "English",
+        "nativeName": "English"
+      }
+    ],
+    "flag": "🇺🇸",
+    "timezones": ["UTC-05:00"]
+  },
+  {
+    "name": "Florida",
+    "displayName": "Florida",
+    "alpha2Code": "FL",
+    "alpha3Code": "USA-FL",
+    "capital": "Tallahassee",
+    "region": "USA",
+    "subregion": "USA",
+    "population": 21477737,
+    "latlng": [30.4518, -84.27277],
+    "currencies": [
+      {
+        "code": "USD",
+        "name": "United States dollar",
+        "symbol": "$"
+      }
+    ],
+    "languages": [
+      {
+        "iso639_1": "en",
+        "iso639_2": "eng",
+        "name": "English",
+        "nativeName": "English"
+      }
+    ],
+    "flag": "🇺🇸",
+    "timezones": ["UTC-05:00", "UTC-06:00"]
+  },
+  {
+    "name": "Georgia",
+    "displayName": "Georgia",
+    "alpha2Code": "GA",
+    "alpha3Code": "USA-GA",
+    "capital": "Atlanta",
+    "region": "USA",
+    "subregion": "USA",
+    "population": 10617423,
+    "latlng": [33.76, -84.39],
+    "currencies": [
+      {
+        "code": "USD",
+        "name": "United States dollar",
+        "symbol": "$"
+      }
+    ],
+    "languages": [
+      {
+        "iso639_1": "en",
+        "iso639_2": "eng",
+        "name": "English",
+        "nativeName": "English"
+      }
+    ],
+    "flag": "🇺🇸",
+    "timezones": ["UTC-05:00"]
+  },
+  {
+    "name": "Hawaii",
+    "displayName": "Hawaii",
+    "alpha2Code": "HI",
+    "alpha3Code": "USA-HI",
+    "capital": "Honolulu",
+    "region": "USA",
+    "subregion": "USA",
+    "population": 1415872,
+    "latlng": [21.30895, -157.826182],
+    "currencies": [
+      {
+        "code": "USD",
+        "name": "United States dollar",
+        "symbol": "$"
+      }
+    ],
+    "languages": [
+      {
+        "iso639_1": "en",
+        "iso639_2": "eng",
+        "name": "English",
+        "nativeName": "English"
+      }
+    ],
+    "flag": "🇺🇸",
+    "timezones": ["UTC-10:00"]
+  },
+  {
+    "name": "Idaho",
+    "displayName": "Idaho",
+    "alpha2Code": "ID",
+    "alpha3Code": "USA-ID",
+    "capital": "Boise",
+    "region": "USA",
+    "subregion": "USA",
+    "population": 1787065,
+    "latlng": [43.613739, -116.237651],
+    "currencies": [
+      {
+        "code": "USD",
+        "name": "United States dollar",
+        "symbol": "$"
+      }
+    ],
+    "languages": [
+      {
+        "iso639_1": "en",
+        "iso639_2": "eng",
+        "name": "English",
+        "nativeName": "English"
+      }
+    ],
+    "flag": "🇺🇸",
+    "timezones": ["UTC-07:00", "UTC-08:00"]
+  },
+  {
+    "name": "Illinois",
+    "displayName": "Illinois",
+    "alpha2Code": "IL",
+    "alpha3Code": "USA-IL",
+    "capital": "Springfield",
+    "region": "USA",
+    "subregion": "USA",
+    "population": 12671821,
+    "latlng": [39.78325, -89.650373],
+    "currencies": [
+      {
+        "code": "USD",
+        "name": "United States dollar",
+        "symbol": "$"
+      }
+    ],
+    "languages": [
+      {
+        "iso639_1": "en",
+        "iso639_2": "eng",
+        "name": "English",
+        "nativeName": "English"
+      }
+    ],
+    "flag": "🇺🇸",
+    "timezones": ["UTC-06:00"]
+  },
+  {
+    "name": "Indiana",
+    "displayName": "Indiana",
+    "alpha2Code": "IN",
+    "alpha3Code": "USA-IN",
+    "capital": "Indianapolis",
+    "region": "USA",
+    "subregion": "USA",
+    "population": 6732219,
+    "latlng": [39.790942, -86.147685],
+    "currencies": [
+      {
+        "code": "USD",
+        "name": "United States dollar",
+        "symbol": "$"
+      }
+    ],
+    "languages": [
+      {
+        "iso639_1": "en",
+        "iso639_2": "eng",
+        "name": "English",
+        "nativeName": "English"
+      }
+    ],
+    "flag": "🇺🇸",
+    "timezones": ["UTC-05:00", "UTC-06:00"]
+  },
+  {
+    "name": "Iowa",
+    "displayName": "Iowa",
+    "alpha2Code": "IA",
+    "alpha3Code": "USA-IA",
+    "capital": "Des Moines",
+    "region": "USA",
+    "subregion": "USA",
+    "population": 3155070,
+    "latlng": [41.590939, -93.620866],
+    "currencies": [
+      {
+        "code": "USD",
+        "name": "United States dollar",
+        "symbol": "$"
+      }
+    ],
+    "languages": [
+      {
+        "iso639_1": "en",
+        "iso639_2": "eng",
+        "name": "English",
+        "nativeName": "English"
+      }
+    ],
+    "flag": "🇺🇸",
+    "timezones": ["UTC-06:00"]
+  },
+  {
+    "name": "Kansas",
+    "displayName": "Kansas",
+    "alpha2Code": "KS",
+    "alpha3Code": "USA-KS",
+    "capital": "Topeka",
+    "region": "USA",
+    "subregion": "USA",
+    "population": 2913314,
+    "latlng": [39.04, -95.69],
+    "currencies": [
+      {
+        "code": "USD",
+        "name": "United States dollar",
+        "symbol": "$"
+      }
+    ],
+    "languages": [
+      {
+        "iso639_1": "en",
+        "iso639_2": "eng",
+        "name": "English",
+        "nativeName": "English"
+      }
+    ],
+    "flag": "🇺🇸",
+    "timezones": ["UTC-06:00", "UTC-07:00"]
+  },
+  {
+    "name": "Kentucky",
+    "displayName": "Kentucky",
+    "alpha2Code": "KY",
+    "alpha3Code": "USA-KY",
+    "capital": "Frankfort",
+    "region": "USA",
+    "subregion": "USA",
+    "population": 4467673,
+    "latlng": [38.197274, -84.86311],
+    "currencies": [
+      {
+        "code": "USD",
+        "name": "United States dollar",
+        "symbol": "$"
+      }
+    ],
+    "languages": [
+      {
+        "iso639_1": "en",
+        "iso639_2": "eng",
+        "name": "English",
+        "nativeName": "English"
+      }
+    ],
+    "flag": "🇺🇸",
+    "timezones": ["UTC-05:00", "UTC-06:00"]
+  },
+  {
+    "name": "Louisiana",
+    "displayName": "Louisiana",
+    "alpha2Code": "LA",
+    "alpha3Code": "USA-LA",
+    "capital": "Baton Rouge",
+    "region": "USA",
+    "subregion": "USA",
+    "population": 4648794,
+    "latlng": [30.45809, -91.140229],
+    "currencies": [
+      {
+        "code": "USD",
+        "name": "United States dollar",
+        "symbol": "$"
+      }
+    ],
+    "languages": [
+      {
+        "iso639_1": "en",
+        "iso639_2": "eng",
+        "name": "English",
+        "nativeName": "English"
+      }
+    ],
+    "flag": "🇺🇸",
+    "timezones": ["UTC-06:00"]
+  },
+  {
+    "name": "Maine",
+    "displayName": "Maine",
+    "alpha2Code": "ME",
+    "alpha3Code": "USA-ME",
+    "capital": "Augusta",
+    "region": "USA",
+    "subregion": "USA",
+    "population": 1344212,
+    "latlng": [44.323535, -69.765261],
+    "currencies": [
+      {
+        "code": "USD",
+        "name": "United States dollar",
+        "symbol": "$"
+      }
+    ],
+    "languages": [
+      {
+        "iso639_1": "en",
+        "iso639_2": "eng",
+        "name": "English",
+        "nativeName": "English"
+      }
+    ],
+    "flag": "🇺🇸",
+    "timezones": ["UTC-05:00"]
+  },
+  {
+    "name": "Maryland",
+    "displayName": "Maryland",
+    "alpha2Code": "MD",
+    "alpha3Code": "USA-MD",
+    "capital": "Annapolis",
+    "region": "USA",
+    "subregion": "USA",
+    "population": 6045680,
+    "latlng": [38.972945, -76.501157],
+    "currencies": [
+      {
+        "code": "USD",
+        "name": "United States dollar",
+        "symbol": "$"
+      }
+    ],
+    "languages": [
+      {
+        "iso639_1": "en",
+        "iso639_2": "eng",
+        "name": "English",
+        "nativeName": "English"
+      }
+    ],
+    "flag": "🇺🇸",
+    "timezones": ["UTC-05:00"]
+  },
+  {
+    "name": "Massachusetts",
+    "displayName": "Massachusetts",
+    "alpha2Code": "MA",
+    "alpha3Code": "USA-MA",
+    "capital": "Boston",
+    "region": "USA",
+    "subregion": "USA",
+    "population": 6892503,
+    "latlng": [42.2352, -71.0275],
+    "currencies": [
+      {
+        "code": "USD",
+        "name": "United States dollar",
+        "symbol": "$"
+      }
+    ],
+    "languages": [
+      {
+        "iso639_1": "en",
+        "iso639_2": "eng",
+        "name": "English",
+        "nativeName": "English"
+      }
+    ],
+    "flag": "🇺🇸",
+    "timezones": ["UTC-05:00"]
+  },
+  {
+    "name": "Michigan",
+    "displayName": "Michigan",
+    "alpha2Code": "MI",
+    "alpha3Code": "USA-MI",
+    "capital": "Lansing",
+    "region": "USA",
+    "subregion": "USA",
+    "population": 9986857,
+    "latlng": [42.7335, -84.5467],
+    "currencies": [
+      {
+        "code": "USD",
+        "name": "United States dollar",
+        "symbol": "$"
+      }
+    ],
+    "languages": [
+      {
+        "iso639_1": "en",
+        "iso639_2": "eng",
+        "name": "English",
+        "nativeName": "English"
+      }
+    ],
+    "flag": "🇺🇸",
+    "timezones": ["UTC-05:00", "UTC-06:00"]
+  },
+  {
+    "name": "Minnesota",
+    "displayName": "Minnesota",
+    "alpha2Code": "MN",
+    "alpha3Code": "USA-MN",
+    "capital": "Saint Paul",
+    "region": "USA",
+    "subregion": "USA",
+    "population": 5639632,
+    "latlng": [44.95, -93.094],
+    "currencies": [
+      {
+        "code": "USD",
+        "name": "United States dollar",
+        "symbol": "$"
+      }
+    ],
+    "languages": [
+      {
+        "iso639_1": "en",
+        "iso639_2": "eng",
+        "name": "English",
+        "nativeName": "English"
+      }
+    ],
+    "flag": "🇺🇸",
+    "timezones": ["UTC-06:00"]
+  },
+  {
+    "name": "Mississippi",
+    "displayName": "Mississippi",
+    "alpha2Code": "MS",
+    "alpha3Code": "USA-MS",
+    "capital": "Jackson",
+    "region": "USA",
+    "subregion": "USA",
+    "population": 2976149,
+    "latlng": [32.32, -90.207],
+    "currencies": [
+      {
+        "code": "USD",
+        "name": "United States dollar",
+        "symbol": "$"
+      }
+    ],
+    "languages": [
+      {
+        "iso639_1": "en",
+        "iso639_2": "eng",
+        "name": "English",
+        "nativeName": "English"
+      }
+    ],
+    "flag": "🇺🇸",
+    "timezones": ["UTC-06:00"]
+  },
+  {
+    "name": "Missouri",
+    "displayName": "Missouri",
+    "alpha2Code": "MO",
+    "alpha3Code": "USA-MO",
+    "capital": "Jefferson City",
+    "region": "USA",
+    "subregion": "USA",
+    "population": 6137428,
+    "latlng": [38.572954, -92.189283],
+    "currencies": [
+      {
+        "code": "USD",
+        "name": "United States dollar",
+        "symbol": "$"
+      }
+    ],
+    "languages": [
+      {
+        "iso639_1": "en",
+        "iso639_2": "eng",
+        "name": "English",
+        "nativeName": "English"
+      }
+    ],
+    "flag": "🇺🇸",
+    "timezones": ["UTC-06:00"]
+  },
+  {
+    "name": "Montana",
+    "displayName": "Montana",
+    "alpha2Code": "MT",
+    "alpha3Code": "USA-MT",
+    "capital": "Helana",
+    "region": "USA",
+    "subregion": "USA",
+    "population": 1068778,
+    "latlng": [46.595805, -112.027031],
+    "currencies": [
+      {
+        "code": "USD",
+        "name": "United States dollar",
+        "symbol": "$"
+      }
+    ],
+    "languages": [
+      {
+        "iso639_1": "en",
+        "iso639_2": "eng",
+        "name": "English",
+        "nativeName": "English"
+      }
+    ],
+    "flag": "🇺🇸",
+    "timezones": ["UTC-07:00"]
+  },
+  {
+    "name": "Nebraska",
+    "displayName": "Nebraska",
+    "alpha2Code": "NE",
+    "alpha3Code": "USA-NE",
+    "capital": "Lincoln",
+    "region": "USA",
+    "subregion": "USA",
+    "population": 1934408,
+    "latlng": [40.809868, -96.675345],
+    "currencies": [
+      {
+        "code": "USD",
+        "name": "United States dollar",
+        "symbol": "$"
+      }
+    ],
+    "languages": [
+      {
+        "iso639_1": "en",
+        "iso639_2": "eng",
+        "name": "English",
+        "nativeName": "English"
+      }
+    ],
+    "flag": "🇺🇸",
+    "timezones": ["UTC-06:00", "UTC-07:00"]
+  },
+  {
+    "name": "Nevada",
+    "displayName": "Nevada",
+    "alpha2Code": "NV",
+    "alpha3Code": "USA-NV",
+    "capital": "Carson City",
+    "region": "USA",
+    "subregion": "USA",
+    "population": 3080156,
+    "latlng": [39.160949, -119.753877],
+    "currencies": [
+      {
+        "code": "USD",
+        "name": "United States dollar",
+        "symbol": "$"
+      }
+    ],
+    "languages": [
+      {
+        "iso639_1": "en",
+        "iso639_2": "eng",
+        "name": "English",
+        "nativeName": "English"
+      }
+    ],
+    "flag": "🇺🇸",
+    "timezones": ["UTC-08:00", "UTC-07:00"]
+  },
+  {
+    "name": "New Hampshire",
+    "displayName": "New Hampshire",
+    "alpha2Code": "NH",
+    "alpha3Code": "USA-NH",
+    "capital": "Concord",
+    "region": "USA",
+    "subregion": "USA",
+    "population": 1359711,
+    "latlng": [43.220093, -71.549127],
+    "currencies": [
+      {
+        "code": "USD",
+        "name": "United States dollar",
+        "symbol": "$"
+      }
+    ],
+    "languages": [
+      {
+        "iso639_1": "en",
+        "iso639_2": "eng",
+        "name": "English",
+        "nativeName": "English"
+      }
+    ],
+    "flag": "🇺🇸",
+    "timezones": ["UTC-05:00"]
+  },
+  {
+    "name": "New Jersey",
+    "displayName": "New Jersey",
+    "alpha2Code": "NJ",
+    "alpha3Code": "USA-NJ",
+    "capital": "Trenton",
+    "region": "USA",
+    "subregion": "USA",
+    "population": 8882190,
+    "latlng": [40.221741, -74.756138],
+    "currencies": [
+      {
+        "code": "USD",
+        "name": "United States dollar",
+        "symbol": "$"
+      }
+    ],
+    "languages": [
+      {
+        "iso639_1": "en",
+        "iso639_2": "eng",
+        "name": "English",
+        "nativeName": "English"
+      }
+    ],
+    "flag": "🇺🇸",
+    "timezones": ["UTC-05:00"]
+  },
+  {
+    "name": "New Mexico",
+    "displayName": "New Mexico",
+    "alpha2Code": "NM",
+    "alpha3Code": "USA-NM",
+    "capital": "Santa Fe",
+    "region": "USA",
+    "subregion": "USA",
+    "population": 2096829,
+    "latlng": [35.667231, -105.964575],
+    "currencies": [
+      {
+        "code": "USD",
+        "name": "United States dollar",
+        "symbol": "$"
+      }
+    ],
+    "languages": [
+      {
+        "iso639_1": "en",
+        "iso639_2": "eng",
+        "name": "English",
+        "nativeName": "English"
+      }
+    ],
+    "flag": "🇺🇸",
+    "timezones": ["UTC-07:00"]
+  },
+  {
+    "name": "New York",
+    "displayName": "New York",
+    "alpha2Code": "NY",
+    "alpha3Code": "USA-NY",
+    "capital": "Albany",
+    "region": "USA",
+    "subregion": "USA",
+    "population": 19453561,
+    "latlng": [42.659829, -73.781339],
+    "currencies": [
+      {
+        "code": "USD",
+        "name": "United States dollar",
+        "symbol": "$"
+      }
+    ],
+    "languages": [
+      {
+        "iso639_1": "en",
+        "iso639_2": "eng",
+        "name": "English",
+        "nativeName": "English"
+      }
+    ],
+    "flag": "🇺🇸",
+    "timezones": ["UTC-05:00"]
+  },
+  {
+    "name": "North Carolina",
+    "displayName": "North Carolina",
+    "alpha2Code": "NC",
+    "alpha3Code": "USA-NC",
+    "capital": "Raleigh",
+    "region": "USA",
+    "subregion": "USA",
+    "population": 10488084,
+    "latlng": [35.771, -78.638],
+    "currencies": [
+      {
+        "code": "USD",
+        "name": "United States dollar",
+        "symbol": "$"
+      }
+    ],
+    "languages": [
+      {
+        "iso639_1": "en",
+        "iso639_2": "eng",
+        "name": "English",
+        "nativeName": "English"
+      }
+    ],
+    "flag": "🇺🇸",
+    "timezones": ["UTC-05:00"]
+  },
+  {
+    "name": "North Dakota",
+    "displayName": "North Dakota",
+    "alpha2Code": "ND",
+    "alpha3Code": "USA-ND",
+    "capital": "Bismarck",
+    "region": "USA",
+    "subregion": "USA",
+    "population": 762062,
+    "latlng": [48.813343, -100.779004],
+    "currencies": [
+      {
+        "code": "USD",
+        "name": "United States dollar",
+        "symbol": "$"
+      }
+    ],
+    "languages": [
+      {
+        "iso639_1": "en",
+        "iso639_2": "eng",
+        "name": "English",
+        "nativeName": "English"
+      }
+    ],
+    "flag": "🇺🇸",
+    "timezones": ["UTC-06:00", "UTC-07:00"]
+  },
+  {
+    "name": "Ohio",
+    "displayName": "Ohio",
+    "alpha2Code": "OH",
+    "alpha3Code": "USA-OH",
+    "capital": "Columbus",
+    "region": "USA",
+    "subregion": "USA",
+    "population": 11689100,
+    "latlng": [39.962245, -83.000647],
+    "currencies": [
+      {
+        "code": "USD",
+        "name": "United States dollar",
+        "symbol": "$"
+      }
+    ],
+    "languages": [
+      {
+        "iso639_1": "en",
+        "iso639_2": "eng",
+        "name": "English",
+        "nativeName": "English"
+      }
+    ],
+    "flag": "🇺🇸",
+    "timezones": ["UTC-05:00"]
+  },
+  {
+    "name": "Oklahoma",
+    "displayName": "Oklahoma",
+    "alpha2Code": "OK",
+    "alpha3Code": "USA-OK",
+    "capital": "Oklahoma City",
+    "region": "USA",
+    "subregion": "USA",
+    "population": 3956971,
+    "latlng": [35.482309, -97.534994],
+    "currencies": [
+      {
+        "code": "USD",
+        "name": "United States dollar",
+        "symbol": "$"
+      }
+    ],
+    "languages": [
+      {
+        "iso639_1": "en",
+        "iso639_2": "eng",
+        "name": "English",
+        "nativeName": "English"
+      }
+    ],
+    "flag": "🇺🇸",
+    "timezones": ["UTC-06:00"]
+  },
+  {
+    "name": "Oregon",
+    "displayName": "Oregon",
+    "alpha2Code": "OR",
+    "alpha3Code": "USA-OR",
+    "capital": "Salem",
+    "region": "USA",
+    "subregion": "USA",
+    "population": 4217737,
+    "latlng": [44.931109, -123.029159],
+    "currencies": [
+      {
+        "code": "USD",
+        "name": "United States dollar",
+        "symbol": "$"
+      }
+    ],
+    "languages": [
+      {
+        "iso639_1": "en",
+        "iso639_2": "eng",
+        "name": "English",
+        "nativeName": "English"
+      }
+    ],
+    "flag": "🇺🇸",
+    "timezones": ["UTC-08:00", "UTC-07:00"]
+  },
+  {
+    "name": "Pennsylvania",
+    "displayName": "Pennsylvania",
+    "alpha2Code": "PA",
+    "alpha3Code": "USA-PA",
+    "capital": "Harrisburg",
+    "region": "USA",
+    "subregion": "USA",
+    "population": 12801989,
+    "latlng": [40.269789, -76.875613],
+    "currencies": [
+      {
+        "code": "USD",
+        "name": "United States dollar",
+        "symbol": "$"
+      }
+    ],
+    "languages": [
+      {
+        "iso639_1": "en",
+        "iso639_2": "eng",
+        "name": "English",
+        "nativeName": "English"
+      }
+    ],
+    "flag": "🇺🇸",
+    "timezones": ["UTC-05:00"]
+  },
+  {
+    "name": "Rhode Island",
+    "displayName": "Rhode Island",
+    "alpha2Code": "RI",
+    "alpha3Code": "USA-RI",
+    "capital": "Providence",
+    "region": "USA",
+    "subregion": "USA",
+    "population": 1059361,
+    "latlng": [41.82355, -71.422132],
+    "currencies": [
+      {
+        "code": "USD",
+        "name": "United States dollar",
+        "symbol": "$"
+      }
+    ],
+    "languages": [
+      {
+        "iso639_1": "en",
+        "iso639_2": "eng",
+        "name": "English",
+        "nativeName": "English"
+      }
+    ],
+    "flag": "🇺🇸",
+    "timezones": ["UTC-05:00"]
+  },
+  {
+    "name": "South Carolina",
+    "displayName": "South Carolina",
+    "alpha2Code": "SC",
+    "alpha3Code": "USA-SC",
+    "capital": "Columbia",
+    "region": "USA",
+    "subregion": "USA",
+    "population": 5148714,
+    "latlng": [34, -81.035],
+    "currencies": [
+      {
+        "code": "USD",
+        "name": "United States dollar",
+        "symbol": "$"
+      }
+    ],
+    "languages": [
+      {
+        "iso639_1": "en",
+        "iso639_2": "eng",
+        "name": "English",
+        "nativeName": "English"
+      }
+    ],
+    "flag": "🇺🇸",
+    "timezones": ["UTC-05:00"]
+  },
+  {
+    "name": "South Dakota",
+    "displayName": "South Dakota",
+    "alpha2Code": "SD",
+    "alpha3Code": "USA-SD",
+    "capital": "Pierre",
+    "region": "USA",
+    "subregion": "USA",
+    "population": 884659,
+    "latlng": [44.367966, -100.336378],
+    "currencies": [
+      {
+        "code": "USD",
+        "name": "United States dollar",
+        "symbol": "$"
+      }
+    ],
+    "languages": [
+      {
+        "iso639_1": "en",
+        "iso639_2": "eng",
+        "name": "English",
+        "nativeName": "English"
+      }
+    ],
+    "flag": "🇺🇸",
+    "timezones": ["UTC-06:00", "UTC-07:00"]
+  },
+  {
+    "name": "Tennessee",
+    "displayName": "Tennessee",
+    "alpha2Code": "TN",
+    "alpha3Code": "USA-TN",
+    "capital": "Nashville",
+    "region": "USA",
+    "subregion": "USA",
+    "population": 6829174,
+    "latlng": [36.165, -86.784],
+    "currencies": [
+      {
+        "code": "USD",
+        "name": "United States dollar",
+        "symbol": "$"
+      }
+    ],
+    "languages": [
+      {
+        "iso639_1": "en",
+        "iso639_2": "eng",
+        "name": "English",
+        "nativeName": "English"
+      }
+    ],
+    "flag": "🇺🇸",
+    "timezones": ["UTC-06:00", "UTC-05:00"]
+  },
+  {
+    "name": "Texas",
+    "displayName": "Texas",
+    "alpha2Code": "TX",
+    "alpha3Code": "USA-TX",
+    "capital": "Austin",
+    "region": "USA",
+    "subregion": "USA",
+    "population": 28995881,
+    "latlng": [30.266667, -97.75],
+    "currencies": [
+      {
+        "code": "USD",
+        "name": "United States dollar",
+        "symbol": "$"
+      }
+    ],
+    "languages": [
+      {
+        "iso639_1": "en",
+        "iso639_2": "eng",
+        "name": "English",
+        "nativeName": "English"
+      }
+    ],
+    "flag": "🇺🇸",
+    "timezones": ["UTC-06:00", "UTC-07:00"]
+  },
+  {
+    "name": "Utah",
+    "displayName": "Utah",
+    "alpha2Code": "UT",
+    "alpha3Code": "USA-UT",
+    "capital": "Salt Lake City",
+    "region": "USA",
+    "subregion": "USA",
+    "population": 3205958,
+    "latlng": [40.7547, -111.892622],
+    "currencies": [
+      {
+        "code": "USD",
+        "name": "United States dollar",
+        "symbol": "$"
+      }
+    ],
+    "languages": [
+      {
+        "iso639_1": "en",
+        "iso639_2": "eng",
+        "name": "English",
+        "nativeName": "English"
+      }
+    ],
+    "flag": "🇺🇸",
+    "timezones": ["UTC-07:00"]
+  },
+  {
+    "name": "Vermont",
+    "displayName": "Vermont",
+    "alpha2Code": "VT",
+    "alpha3Code": "USA-VT",
+    "capital": "Montpelier",
+    "region": "USA",
+    "subregion": "USA",
+    "population": 623989,
+    "latlng": [44.26639, -72.57194],
+    "currencies": [
+      {
+        "code": "USD",
+        "name": "United States dollar",
+        "symbol": "$"
+      }
+    ],
+    "languages": [
+      {
+        "iso639_1": "en",
+        "iso639_2": "eng",
+        "name": "English",
+        "nativeName": "English"
+      }
+    ],
+    "flag": "🇺🇸",
+    "timezones": ["UTC-05:00"]
+  },
+  {
+    "name": "Virginia",
+    "displayName": "Virginia",
+    "alpha2Code": "VA",
+    "alpha3Code": "USA-VA",
+    "capital": "Richmond",
+    "region": "USA",
+    "subregion": "USA",
+    "population": 8535519,
+    "latlng": [37.54, -77.46],
+    "currencies": [
+      {
+        "code": "USD",
+        "name": "United States dollar",
+        "symbol": "$"
+      }
+    ],
+    "languages": [
+      {
+        "iso639_1": "en",
+        "iso639_2": "eng",
+        "name": "English",
+        "nativeName": "English"
+      }
+    ],
+    "flag": "🇺🇸",
+    "timezones": ["UTC-05:00"]
+  },
+  {
+    "name": "Washington",
+    "displayName": "Washington",
+    "alpha2Code": "WA",
+    "alpha3Code": "USA-WA",
+    "capital": "Olympia",
+    "region": "USA",
+    "subregion": "USA",
+    "population": 7614893,
+    "latlng": [47.042418, -122.893077],
+    "currencies": [
+      {
+        "code": "USD",
+        "name": "United States dollar",
+        "symbol": "$"
+      }
+    ],
+    "languages": [
+      {
+        "iso639_1": "en",
+        "iso639_2": "eng",
+        "name": "English",
+        "nativeName": "English"
+      }
+    ],
+    "flag": "🇺🇸",
+    "timezones": ["UTC-08:00", "UTC-07:00"]
+  },
+  {
+    "name": "West Virginia",
+    "displayName": "West Virginia",
+    "alpha2Code": "WV",
+    "alpha3Code": "USA-WV",
+    "capital": "Charleston",
+    "region": "USA",
+    "subregion": "USA",
+    "population": 1792147,
+    "latlng": [38.349497, -81.633294],
+    "currencies": [
+      {
+        "code": "USD",
+        "name": "United States dollar",
+        "symbol": "$"
+      }
+    ],
+    "languages": [
+      {
+        "iso639_1": "en",
+        "iso639_2": "eng",
+        "name": "English",
+        "nativeName": "English"
+      }
+    ],
+    "flag": "🇺🇸",
+    "timezones": ["UTC-05:00"]
+  },
+  {
+    "name": "Wisconsin",
+    "displayName": "Wisconsin",
+    "alpha2Code": "WI",
+    "alpha3Code": "USA-WI",
+    "capital": "Madison",
+    "region": "USA",
+    "subregion": "USA",
+    "population": 5822434,
+    "latlng": [43.074722, -89.384444],
+    "currencies": [
+      {
+        "code": "USD",
+        "name": "United States dollar",
+        "symbol": "$"
+      }
+    ],
+    "languages": [
+      {
+        "iso639_1": "en",
+        "iso639_2": "eng",
+        "name": "English",
+        "nativeName": "English"
+      }
+    ],
+    "flag": "🇺🇸",
+    "timezones": ["UTC-06:00"]
+  },
+  {
+    "name": "Wyoming",
+    "displayName": "Wyoming",
+    "alpha2Code": "WY",
+    "alpha3Code": "USA-WY",
+    "capital": "Cheyenne",
+    "region": "USA",
+    "subregion": "USA",
+    "population": 578759,
+    "latlng": [41.145548, -104.802042],
+    "currencies": [
+      {
+        "code": "USD",
+        "name": "United States dollar",
+        "symbol": "$"
+      }
+    ],
+    "languages": [
+      {
+        "iso639_1": "en",
+        "iso639_2": "eng",
+        "name": "English",
+        "nativeName": "English"
+      }
+    ],
+    "flag": "🇺🇸",
+    "timezones": ["UTC-07:00"]
+  },
+  {
+    "name": "Las Vegas",
+    "displayName": "Las Vegas",
+    "alpha2Code": "US-LV",
+    "alpha3Code": "USA-LV",
+    "capital": "Las Vegas",
+    "region": "USA",
+    "subregion": "Nevada",
+    "population": 641676,
+    "latlng": [39.160949, -119.753877],
+    "currencies": [
+      {
+        "code": "USD",
+        "name": "United States dollar",
+        "symbol": "$"
+      }
+    ],
+    "languages": [
+      {
+        "iso639_1": "en",
+        "iso639_2": "eng",
+        "name": "English",
+        "nativeName": "English"
+      }
+    ],
+    "flag": "🇺🇸",
+    "timezones": ["UTC-06:00"]
+  }
+]
