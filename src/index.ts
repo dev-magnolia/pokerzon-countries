@@ -162,3 +162,39 @@ export function getFlagSvgUrl(
   if (!path) return null;
   return `${(options.baseUrl ?? CDN_BASE_URL).replace(/\/$/, "")}/${path}`;
 }
+
+// ── Flagpack (flag.vercel.app) ───────────────────────────────────────────────
+// 4th option: Flagpack designs (flagpack.xyz, MIT) in three fixed pixel sizes, served by the free
+// flag.vercel.app API: /{s|m|l}/{ALPHA2}.svg — e.g. https://flag.vercel.app/m/SG.svg
+// No SLA (a free community endpoint). To self-host, copy node_modules/flagpack-core/svg (same paths) and pass baseUrl.
+
+export type FlagpackSize = "s" | "m" | "l";
+
+/** Pixel size of each Flagpack size (width × height, 4:3). */
+export const FLAGPACK_SIZES: Record<FlagpackSize, { width: number; height: number }> = {
+  s: { width: 16, height: 12 },
+  m: { width: 20, height: 15 },
+  l: { width: 32, height: 24 },
+};
+
+export const FLAGPACK_BASE_URL = "https://flag.vercel.app";
+
+/** Codes that Flagpack names differently, and the ones it does not have. */
+const FLAGPACK_ALIAS: Record<string, string> = { GB: "GB-UKM", BQ: "BQ-BO" };
+const FLAGPACK_MISSING = new Set(["XK"]);
+
+/**
+ * Flagpack flag URL: "SG" → https://flag.vercel.app/m/SG.svg. Accepts any code or name; a US state → US.
+ * Null if unknown or not in Flagpack (Kosovo). Self-hosted: { baseUrl: "/flags/flagpack" }.
+ */
+export function getFlagpackUrl(
+  code: string | null | undefined,
+  options: { size?: FlagpackSize; baseUrl?: string } = {}
+): string | null {
+  const c = getCountry(code);
+  if (!c) return null;
+  const a2 = isUsaState(c) ? "US" : c.alpha2Code.toUpperCase();
+  if (FLAGPACK_MISSING.has(a2)) return null;
+  const name = FLAGPACK_ALIAS[a2] ?? a2;
+  return `${(options.baseUrl ?? FLAGPACK_BASE_URL).replace(/\/$/, "")}/${options.size ?? "m"}/${name}.svg`;
+}

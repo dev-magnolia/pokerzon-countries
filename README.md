@@ -57,18 +57,21 @@ Types: `Country`, `UsaState`, `CountryLike`, `Currency`, `Language`, `RegionalBl
 | **Emoji** | `country.flag`, `getFlagEmoji(code)` | Nothing to download; text, so it scales and copies | Chrome / Edge on Windows show two letters (e.g. "KR"); iOS set to mainland China hides 🇹🇼 |
 | **Emoji + polyfill** | call `polyfillFlagEmojis()` once on the client, and put `"Twemoji Country Flags"` first in `font-family` | Same as emoji, and works on Windows Chrome / Edge — the 77 kB font loads only there | One extra font request on those browsers |
 | **SVG** | `<img src={getFlagSvgUrl(code)}>` (4x3 or 1x1) | Identical everywhere, crisp at any size | One file per flag (mostly 1–10 kB); not text |
+| **Flagpack** | `<img src={getFlagpackUrl(code, { size: "s" })}>` — flag.vercel.app | Small, pixel-tuned icons (s 16×12, m 20×15, l 32×24); immutable cache | Free Vercel-hosted API without SLA; no Kosovo (XK → `null`); fixed sizes |
 
 ```ts
-import { polyfillFlagEmojis, FLAG_EMOJI_FONT_FAMILY, getFlagSvgUrl } from "@pokerzon/countries";
+import { polyfillFlagEmojis, FLAG_EMOJI_FONT_FAMILY, getFlagSvgUrl, getFlagpackUrl } from "@pokerzon/countries";
 
 polyfillFlagEmojis();                       // client side, once (e.g. in the root layout); no-op on the server
 // CSS: .flag { font-family: "Twemoji Country Flags", system-ui, sans-serif; }
 
 getFlagSvgUrl("KR");                        // https://cdn.jsdelivr.net/gh/dev-magnolia/pokerzon-countries@v0.2.0/flags/4x3/kr.svg
 getFlagSvgUrl("KR", { ratio: "1x1", baseUrl: "/assets" });   // "/assets/flags/1x1/kr.svg" — self-hosted copy
+getFlagpackUrl("SG", { size: "s" });     // https://flag.vercel.app/s/SG.svg
+getFlagpackUrl("GB");                     // https://flag.vercel.app/m/GB-UKM.svg (default size: m)
 ```
 
-Self-hosting: copy `node_modules/@pokerzon/countries/flags` (and `assets/TwemojiCountryFlags.woff2` for the polyfill) into your public folder, then pass `baseUrl` / `fontUrl`. By default both are served from jsDelivr, pinned to the package version. Always show the country name or code next to a flag, so nothing is lost where a flag cannot render.
+Self-hosting: copy `node_modules/@pokerzon/countries/flags` (and `assets/TwemojiCountryFlags.woff2` for the polyfill) into your public folder, then pass `baseUrl` / `fontUrl`. By default both are served from jsDelivr, pinned to the package version. Flagpack is not bundled: to avoid depending on flag.vercel.app, install `flagpack-core` and serve its `svg/` folder (same `{s,m,l}/{CODE}.svg` paths), then pass `baseUrl`. Always show the country name or code next to a flag, so nothing is lost where a flag cannot render.
 
 ## Data
 

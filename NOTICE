@@ -21,3 +21,7 @@ The emoji flag polyfill uses country-flag-emoji-polyfill (https://github.com/tal
 Copyright (c) 2022 TalkJS, MIT License. The font assets/TwemojiCountryFlags.woff2 (from that package) contains
 flag artwork from Twemoji (https://github.com/twitter/twemoji), Copyright Twitter, Inc. and other contributors,
 licensed under CC-BY 4.0 (https://creativecommons.org/licenses/by/4.0/).
+
+getFlagpackUrl() points to flag.vercel.app (Flagpack API, hosted on Vercel), which serves the icons of
+Flagpack (https://flagpack.xyz, https://github.com/Yummygum/flagpack-core), Copyright (c) Yummygum, MIT License.
+These icons are not included in this package.
