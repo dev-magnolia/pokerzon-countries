@@ -1,14 +1,17 @@
 {
   "name": "@pokerzon/countries",
-  "version": "0.1.1",
-  "description": "Country reference data (ISO 3166-1, display names, flag emoji, currencies, languages, translations) with typed, dependency-free helpers.",
+  "version": "0.2.0",
+  "description": "Country reference data (ISO 3166-1, display names, currencies, languages, translations) with typed helpers, and flags three ways: emoji, emoji polyfill for Windows, SVG.",
   "keywords": [
     "countries",
     "iso-3166",
     "country-codes",
     "flag-emoji",
     "currencies",
-    "typescript"
+    "typescript",
+    "flags",
+    "svg-flags",
+    "emoji-polyfill"
   ],
   "license": "(MIT AND MPL-2.0)",
   "homepage": "https://github.com/dev-magnolia/pokerzon-countries#readme",
@@ -30,11 +33,15 @@
     },
     "./country.json": "./data/country.json",
     "./usa.json": "./data/usa.json",
+    "./flags/*": "./flags/*",
+    "./assets/*": "./assets/*",
     "./package.json": "./package.json"
   },
   "files": [
     "dist",
     "data",
+    "flags",
+    "assets",
     "LICENSE",
     "NOTICE"
   ],
@@ -47,6 +54,9 @@
     "typecheck": "npm run gen && tsc -p tsconfig.json",
     "test": "npm run gen && tsx --test test/*.test.ts",
     "prepare": "npm run build"
+  },
+  "dependencies": {
+    "country-flag-emoji-polyfill": "^0.1.10"
   },
   "devDependencies": {
     "@types/node": "^22.10.0",

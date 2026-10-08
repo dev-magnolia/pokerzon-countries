@@ -106,3 +106,59 @@ export function isUsaState(x: CountryLike): x is UsaState {
 export function isCountry(x: CountryLike): x is Country {
   return !isUsaState(x);
 }
+
+// ── Flags ────────────────────────────────────────────────────────────────────
+// Three ways to show a flag; pick per place:
+//  1. emoji (country.flag / getFlagEmoji) — no download, fastest; not rendered on Windows Chrome/Edge;
+//  2. emoji + polyfillFlagEmojis() — loads a 77 kB flag font only where emoji flags are missing;
+//  3. SVG (getFlagSvgUrl / getFlagSvgPath) — identical everywhere, one small file per flag (flag-icons).
+
+import { polyfillCountryFlagEmojis } from "country-flag-emoji-polyfill";
+import { VERSION } from "./generated/version.js";
+
+export { VERSION };
+
+/** Font family injected by the polyfill; put it first in font-family where flags should render. */
+export const FLAG_EMOJI_FONT_FAMILY = "Twemoji Country Flags";
+
+/** CDN base of this package's files (jsDelivr, from the public GitHub repo, pinned to this version). */
+export const CDN_BASE_URL = `https://cdn.jsdelivr.net/gh/dev-magnolia/pokerzon-countries@v${VERSION}`;
+
+/** Default URL of the flag font used by the polyfill (served from this package's own repo). */
+export const FLAG_EMOJI_FONT_URL = `${CDN_BASE_URL}/assets/TwemojiCountryFlags.woff2`;
+
+/**
+ * Makes emoji flags render on browsers that support emoji but not flag emoji (Chromium on Windows):
+ * injects a @font-face for "Twemoji Country Flags" (77 kB, loaded only there). Call once on the client.
+ * Then use `font-family: "Twemoji Country Flags", <your fonts>` where flags appear.
+ * Returns true if the font was injected. Safe to call during SSR (does nothing, returns false).
+ */
+export function polyfillFlagEmojis(options: { fontName?: string; fontUrl?: string } = {}): boolean {
+  const g = globalThis as { window?: unknown; document?: unknown };
+  if (typeof g.window === "undefined" || typeof g.document === "undefined") return false;
+  return polyfillCountryFlagEmojis(options.fontName ?? FLAG_EMOJI_FONT_FAMILY, options.fontUrl ?? FLAG_EMOJI_FONT_URL);
+}
+
+export type FlagRatio = "4x3" | "1x1";
+
+/** The flag's SVG path inside this package, e.g. "flags/4x3/kr.svg"; a US state → the US flag. Null if unknown. */
+export function getFlagSvgPath(code: string | null | undefined, ratio: FlagRatio = "4x3"): string | null {
+  const c = getCountry(code);
+  if (!c) return null;
+  const a2 = isUsaState(c) ? "us" : c.alpha2Code.toLowerCase();
+  return `flags/${ratio}/${a2}.svg`;
+}
+
+/**
+ * The flag's SVG URL. By default from the CDN (jsDelivr, pinned to this version); pass `baseUrl` to self-host
+ * (copy node_modules/@pokerzon/countries/flags into your public folder, then e.g. baseUrl: "/assets").
+ * "KR" → https://cdn.jsdelivr.net/gh/dev-magnolia/pokerzon-countries@v0.2.0/flags/4x3/kr.svg
+ */
+export function getFlagSvgUrl(
+  code: string | null | undefined,
+  options: { ratio?: FlagRatio; baseUrl?: string } = {}
+): string | null {
+  const path = getFlagSvgPath(code, options.ratio ?? "4x3");
+  if (!path) return null;
+  return `${(options.baseUrl ?? CDN_BASE_URL).replace(/\/$/, "")}/${path}`;
+}

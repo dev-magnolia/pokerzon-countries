@@ -13,3 +13,11 @@ Changes made to the data:
 - replaced the "flag" image URL (no longer available) with the flag emoji derived from the ISO alpha-2 code.
 
 data/usa.json (US states as country-like records) was compiled by Magnolia ITS and is provided under the MIT License.
+
+Flag SVGs (flags/4x3, flags/1x1) come from flag-icons 7.5.0 (https://github.com/lipis/flag-icons),
+Copyright (c) 2013 Panayiotis Lipiridis, MIT License.
+
+The emoji flag polyfill uses country-flag-emoji-polyfill (https://github.com/talkjs/country-flag-emoji-polyfill),
+Copyright (c) 2022 TalkJS, MIT License. The font assets/TwemojiCountryFlags.woff2 (from that package) contains
+flag artwork from Twemoji (https://github.com/twitter/twemoji), Copyright Twitter, Inc. and other contributors,
+licensed under CC-BY 4.0 (https://creativecommons.org/licenses/by/4.0/).
