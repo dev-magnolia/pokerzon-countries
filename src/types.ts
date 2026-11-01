@@ -44,10 +44,20 @@ export interface Country {
   subregion?: string;
   latlng?: number[];
   area?: number | null;
+  /** Population; with `populationYear` and `populationSource` when refreshed from a current source (v0.4.0+). */
   population: number;
+  /** The year of `population` (World Bank: the latest available year). Missing: the old REST Countries v2 figure. */
+  populationYear?: number;
+  /** Where `population` comes from, e.g. "World Bank". */
+  populationSource?: string;
   gini?: number;
-  /** UTC offsets ("UTC+09:00"), not IANA time zones. */
+  /**
+   * Standard (non-DST) UTC offsets ("UTC+09:00") of the country's IANA zones (v0.4.0+: from the tz database,
+   * without external territories, which have their own ISO codes, and without unofficial or uninhabited zones).
+   */
   timezones: string[];
+  /** The country's IANA time zones ("Australia/Sydney"), for DST-aware display (v0.4.0+). */
+  timezoneIds?: string[];
   currencies: Currency[];
   languages: Language[];
   callingCodes: string[];

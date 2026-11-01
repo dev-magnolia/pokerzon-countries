@@ -4,6 +4,7 @@ import {
   alpha2ToFlagEmoji, alpha3ToAlpha2, countries, getCountries, getCountry, getCountryMemo, getCountryName,
   getCountryNameCached, getFlagEmoji, getMainCurrency, isUsaState, stringToSlug, usaStates,
 } from "../src/index.js";
+import type { Country } from "../src/types.js";
 
 test("data", () => {
   assert.equal(countries.length, 250);
@@ -57,4 +58,21 @@ test("helpers", () => {
   assert.equal(stringToSlug("Viet Nam"), "viet-nam");
   assert.equal(stringToSlug("Côte d'Ivoire"), "cote-divoire");
   assert.ok(isUsaState(getCountry("USA-TX")!));
+});
+
+test("reference data refresh (v0.4.0)", () => {
+  const au = getCountry("AU") as Country;
+  assert.ok(au.population > 26_000_000, "population refreshed");
+  assert.ok((au.populationYear ?? 0) >= 2024);
+  assert.equal(au.populationSource, "World Bank");
+  assert.deepEqual(au.timezones, ["UTC+08:00", "UTC+09:30", "UTC+10:00"]); // no external territories, no Norfolk UTC+11:30
+  assert.ok(au.timezoneIds?.includes("Australia/Sydney"));
+  assert.deepEqual(getCountry("NZ")!.timezones, ["UTC+12:00", "UTC+12:45"]); // no Niue / Cook Islands
+  assert.deepEqual(getCountry("CN")!.timezones, ["UTC+08:00"]);
+  assert.equal(getCountry("HK")!.capital, undefined); // special administrative region
+  assert.equal(getCountry("MO")!.capital, undefined);
+  assert.equal((getCountry("TW") as Country).populationSource, "Ministry of the Interior (Taiwan)");
+  for (const c of countries) {
+    for (const tz of c.timezones) assert.match(tz, /^UTC([+-]\d{2}:\d{2})?$/, c.alpha2Code);
+  }
 });

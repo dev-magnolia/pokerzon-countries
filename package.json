@@ -1,6 +1,6 @@
 {
   "name": "@pokerzon/countries",
-  "version": "0.3.0",
+  "version": "0.4.0",
   "description": "Country reference data (ISO 3166-1, display names, currencies, languages, translations) with typed helpers, and flags four ways: emoji, emoji polyfill for Windows, SVG (flag-icons), Flagpack.",
   "keywords": [
     "countries",
@@ -51,6 +51,7 @@
   },
   "scripts": {
     "gen": "node scripts/gen-data.mjs",
+    "update-data": "node scripts/update-reference-data.mjs",
     "build": "npm run gen && tsc -p tsconfig.build.json",
     "typecheck": "npm run gen && tsc -p tsconfig.json",
     "test": "npm run gen && tsx --test test/*.test.ts",
