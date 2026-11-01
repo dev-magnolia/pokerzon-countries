@@ -75,7 +75,10 @@ Self-hosting: copy `node_modules/@pokerzon/countries/flags` (and `assets/Twemoji
 
 ## Data
 
-- `data/country.json` — 250 countries. Fields: `name`, `displayName`, `alpha2Code`, `alpha3Code`, `numericCode`, `cioc`, `nativeName`, `altSpellings`, `translations` (de, es, fr, ja, it, br, pt, nl, hr, fa), `capital`, `demonym`, `region`, `subregion`, `latlng`, `area`, `population`, `gini`, `timezones` (UTC offsets, not IANA), `currencies`, `languages`, `callingCodes`, `topLevelDomain`, `borders`, `regionalBlocs`, `flag` (emoji).
+- `data/country.json` — 250 countries. Fields: `name`, `displayName`, `alpha2Code`, `alpha3Code`, `numericCode`, `cioc`, `nativeName`, `altSpellings`, `translations` (de, es, fr, ja, it, br, pt, nl, hr, fa), `capital`, `demonym`, `region`, `subregion`, `latlng`, `area`, `population` (+ `populationYear`, `populationSource`), `gini`, `timezones` (standard UTC offsets), `timezoneIds` (IANA), `currencies`, `languages`, `callingCodes`, `topLevelDomain`, `borders`, `regionalBlocs`, `flag` (emoji).
+- **Refreshed fields (v0.4.0):** `population` from the World Bank (SP.POP.TOTL, the latest year, via [datasets/population](https://github.com/datasets/population)), with `populationYear` and `populationSource`; `timezones` and `timezoneIds` from the IANA tz database (`zone.tab`): the standard offsets of the country's own zones, without external territories (they have their own ISO codes) and without unofficial or uninhabited zones. Countries missing from a source keep the old REST Countries value (no `populationYear`).
+- `data/overrides.json` — hand corrections with a reason (e.g. Hong Kong and Macau have no capital; Taiwan's population is not in the World Bank data).
+- Refresh: `npm run update-data` (downloads the population CSV, reads the system tzdata), then review the diff and `npm test`. Once a year is enough.
 - `data/usa.json` — 51 US states (`alpha3Code`: `USA-NV` …, `flag`: 🇺🇸).
 - `displayName` differs from `name` in 12 cases: United Kingdom, Bolivia, Iran, Macedonia, North Korea, South Korea, Moldova, Russia, Venezuela, Vietnam, Laos, Macau.
 - `flags/4x3/*.svg`, `flags/1x1/*.svg` — 271 flags from flag-icons (by alpha-2, lowercase), every country covered.
@@ -93,4 +96,4 @@ Release: bump the version in `package.json`, commit, `git tag vX.Y.Z`, push with
 
 ## License
 
-Code: MIT (see `LICENSE`). Country data in `data/country.json`: derived from [REST Countries](https://gitlab.com/restcountries/restcountries), MPL-2.0. Flag SVGs: [flag-icons](https://github.com/lipis/flag-icons), MIT. Polyfill: [country-flag-emoji-polyfill](https://github.com/talkjs/country-flag-emoji-polyfill), MIT; its font uses [Twemoji](https://github.com/twitter/twemoji) artwork, CC-BY 4.0. See `NOTICE`.
+Code: MIT (see `LICENSE`). Country data in `data/country.json`: derived from [REST Countries](https://gitlab.com/restcountries/restcountries), MPL-2.0; population from the [World Bank](https://data.worldbank.org/indicator/SP.POP.TOTL), CC BY 4.0; time zones from the IANA tz database (public domain). Flag SVGs: [flag-icons](https://github.com/lipis/flag-icons), MIT. Polyfill: [country-flag-emoji-polyfill](https://github.com/talkjs/country-flag-emoji-polyfill), MIT; its font uses [Twemoji](https://github.com/twitter/twemoji) artwork, CC-BY 4.0. See `NOTICE`.

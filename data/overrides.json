@@ -1,0 +1,6 @@
+{
+  "_doc": "Hand corrections applied by scripts/update-reference-data.mjs after the sources. Each entry: alpha2 -> fields, with a reason. Keep it short; prefer fixing the source.",
+  "HK": { "capital": null, "_reason": "Special administrative region: no capital (City of Victoria is a historical name). Fact check 2026-10-29." },
+  "MO": { "capital": null, "_reason": "Special administrative region: no capital. Fact check 2026-10-29." },
+  "TW": { "population": 23400220, "populationYear": 2024, "populationSource": "Ministry of the Interior (Taiwan)", "_reason": "Not in the World Bank dataset." }
+}

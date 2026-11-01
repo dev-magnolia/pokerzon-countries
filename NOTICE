@@ -10,7 +10,15 @@ Source: https://gitlab.com/restcountries/restcountries
 
 Changes made to the data:
 - added the "displayName" field (short display names, e.g. "South Korea" for "Korea (Republic of)");
-- replaced the "flag" image URL (no longer available) with the flag emoji derived from the ISO alpha-2 code.
+- replaced the "flag" image URL (no longer available) with the flag emoji derived from the ISO alpha-2 code;
+- v0.4.0: refreshed "population" (added "populationYear", "populationSource") and "timezones" (added "timezoneIds"),
+  and applied the corrections in data/overrides.json.
+
+Population figures: World Bank, World Development Indicators, SP.POP.TOTL (Population, total),
+https://data.worldbank.org/indicator/SP.POP.TOTL — licensed under CC BY 4.0
+(https://creativecommons.org/licenses/by/4.0/); obtained via https://github.com/datasets/population.
+
+Time zones: the IANA Time Zone Database (zone.tab), public domain, https://www.iana.org/time-zones
 
 data/usa.json (US states as country-like records) was compiled by Magnolia ITS and is provided under the MIT License.
 
